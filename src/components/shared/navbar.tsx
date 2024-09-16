@@ -11,7 +11,7 @@ export default function NavBar() {
   return (
     <div className="max-w-5xl mx-auto">
       <nav className="flex items-center justify-between p-4 mt-8 text-white">
-        <div className="flex justify-between items-center space-x-4 p-2 px-5 bg-[#27272A] w-9/12 rounded-2xl">
+        <div className="flex justify-between items-center space-x-4 p-2 px-5 md:bg-[#27272A] w-9/12 rounded-2xl">
           <div className="flex items-center gap-4">
             <Avatar>
               <AvatarImage
@@ -26,7 +26,7 @@ export default function NavBar() {
             to={"home"}
             smooth={true}
             duration={500}
-            className="hover:underline text-lg cursor-pointer"
+            className="hidden md:block hover:underline text-lg cursor-pointer"
           >
             Home
           </ScrollLink>
@@ -35,7 +35,7 @@ export default function NavBar() {
             to={"audits"}
             smooth={true}
             duration={500}
-            className="hover:underline text-lg cursor-pointer"
+            className="hidden md:block hover:underline text-lg cursor-pointer"
           >
             Audits
           </ScrollLink>
@@ -43,7 +43,7 @@ export default function NavBar() {
             to={"reviews"}
             smooth={true}
             duration={500}
-            className="hover:underline text-lg cursor-pointer"
+            className="hidden md:block hover:underline text-lg cursor-pointer"
           >
             Reviews
           </ScrollLink>
@@ -53,7 +53,7 @@ export default function NavBar() {
           href="https://github.com/leeftk/leeftk/blob/main/README.md"
           target="blank"
         >
-          <Button className="bg-[#333] hover:bg-[#444] rounded-xl p-6">
+          <Button className="bg-[#333] hover:bg-[#444] rounded-xl text-lg p-6">
             Portfolio <ArrowRight className="ml-4" />
           </Button>
         </Link>
