@@ -42,19 +42,19 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex flex-wrap justify-center w-fit mx-auto mt-16 gap-8">
-        <Card className="w-[350px] bg-[#27272A] text-white border-gray-700 p-5 pb-3 rounded-xl">
+        <Card className="w-[350px] bg-neutral-900/70 text-white border-gray-800 p-5 pb-3 rounded-xl">
           <CardContent className="">
             <h3 className="text-6xl mb-2 font-medium">50K+</h3>
             <p className="text-gray-300 text-lg">Lines of code audited</p>
           </CardContent>
         </Card>
-        <Card className="w-[350px] bg-[#27272A] text-white border-gray-700 p-5 pb-0 rounded-xl">
+        <Card className="w-[350px] bg-neutral-900/70 text-white border-gray-800 p-5 pb-0 rounded-xl">
           <CardContent className="">
             <h3 className="text-6xl mb-2 font-medium">50K+</h3>
             <p className="text-gray-300 text-lg">Lines of code audited</p>
           </CardContent>
         </Card>
-        <Card className="w-[350px] bg-[#27272A] text-white border-gray-700 p-5 pb-0 rounded-xl">
+        <Card className="w-[350px] bg-neutral-900/70 text-white border-gray-800 p-5 pb-0 rounded-xl">
           <CardContent className="">
             <h3 className="text-6xl mb-2 font-medium">50K+</h3>
             <p className="text-gray-300 text-lg">Lines of code audited</p>

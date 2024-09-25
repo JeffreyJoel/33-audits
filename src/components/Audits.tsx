@@ -28,14 +28,6 @@ const timelineData = [
         "Found 14 Medium risk vulnerabilities",    
       ]
   },
-  {
-    protocol: "JuiceBox",
-    findings: [
-        "Found 1 Critical vulnerability",
-        "Found  4 High risk vulnerabilities",
-        "Found 14 Medium risk vulnerabilities",    
-      ]
-  },
 ]
 
 export  function Audits() {
