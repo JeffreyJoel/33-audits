@@ -53,7 +53,7 @@ export default function NavBar() {
           href="https://github.com/leeftk/leeftk/blob/main/README.md"
           target="blank"
         >
-          <Button className="bg-neutral-900/70 rounded-xl text-lg p-6">
+          <Button className="bg-neutral-900/70 rounded-xl text-lg p-6 hover:bg-blue-700 hover:text-white">
             Portfolio <ArrowRight className="ml-4" />
           </Button>
         </Link>

@@ -1,4 +1,5 @@
 import { Audits } from "@/components/Audits";
+import Brands from "@/components/Brands";
 import Hero from "@/components/Hero";
 import Testimonial from "@/components/Reviews";
 import Footer from "@/components/shared/footer";
@@ -23,6 +24,7 @@ export default function Home() {
     <NavBar />
       <div>
         <Hero />
+        <Brands/>
         <Audits />
         <Testimonial/>
         <Footer/>
