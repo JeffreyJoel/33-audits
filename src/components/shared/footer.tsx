@@ -2,6 +2,9 @@ import Link from "next/link";
 // import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import Image from "next/image";
+import profile from "../../assets/profile.jpg";
+
 
 export default function Footer() {
   return (
@@ -9,10 +12,15 @@ export default function Footer() {
   <div className="flex items-center">
   <Avatar>
         <AvatarImage
-          src="https://pbs.twimg.com/profile_images/1677046353451466752/JQtGE1MF_400x400.jpg"
+          src=""
           alt="User Avatar"
         />
-        <AvatarFallback>33</AvatarFallback>
+       <AvatarFallback>
+                <Image
+                src={profile}
+                alt="33 audits"
+                />
+              </AvatarFallback>
       </Avatar>
       <p className="text-xl md:text-2xl font-semibold ml-2">33 Audits</p>
   </div>

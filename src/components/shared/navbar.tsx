@@ -7,6 +7,7 @@ import profile from "../../assets/profile.jpg";
 import { ArrowRight } from "lucide-react";
 import { Link as ScrollLink, Element } from "react-scroll";
 import {MobileNav} from "./mobile-nav";
+import Image from "next/image";
 
 export default function NavBar() {
   return (
@@ -16,10 +17,15 @@ export default function NavBar() {
           <div className="flex items-center gap-4">
             <Avatar>
               <AvatarImage
-                src="https://pbs.twimg.com/profile_images/1677046353451466752/JQtGE1MF_400x400.jpg"
+                src=""
                 alt="User Avatar"
               />
-              <AvatarFallback>TD</AvatarFallback>
+              <AvatarFallback>
+                <Image
+                src={profile}
+                alt="33 audits"
+                />
+              </AvatarFallback>
             </Avatar>
             <span className="font-semibold text-xl">33 Audits</span>
           </div>
