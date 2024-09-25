@@ -6,11 +6,12 @@ import { Button } from "@/components/ui/button";
 import profile from "../../assets/profile.jpg";
 import { ArrowRight } from "lucide-react";
 import { Link as ScrollLink, Element } from "react-scroll";
+import {MobileNav} from "./mobile-nav";
 
 export default function NavBar() {
   return (
-    <div className="max-w-5xl mx-auto">
-      <nav className="flex items-center justify-between p-4 mt-8 text-white">
+    <div className=" md:max-w-5xl mx-auto">
+      <nav className="flex items-center justify-between p-4 mt-4 md:mt-8 text-white">
         <div className="flex justify-between items-center space-x-4 p-2 px-5 md:bg-neutral-900/70 w-9/12 rounded-2xl">
           <div className="flex items-center gap-4">
             <Avatar>
@@ -26,7 +27,7 @@ export default function NavBar() {
             to={"home"}
             smooth={true}
             duration={500}
-            className="hidden md:block hover:underline text-lg cursor-pointer"
+            className="hidden md:block hover:underline text-lg cursor-pointer hover:text-blue-400"
           >
             Home
           </ScrollLink>
@@ -35,7 +36,7 @@ export default function NavBar() {
             to={"audits"}
             smooth={true}
             duration={500}
-            className="hidden md:block hover:underline text-lg cursor-pointer"
+            className="hidden md:block hover:underline text-lg cursor-pointer hover:text-blue-400"
           >
             Audits
           </ScrollLink>
@@ -43,7 +44,7 @@ export default function NavBar() {
             to={"reviews"}
             smooth={true}
             duration={500}
-            className="hidden md:block hover:underline text-lg cursor-pointer"
+            className="hidden md:block hover:underline text-lg cursor-pointer hover:text-blue-400"
           >
             Reviews
           </ScrollLink>
@@ -52,11 +53,13 @@ export default function NavBar() {
         <Link
           href="https://github.com/leeftk/leeftk/blob/main/README.md"
           target="blank"
+          className="hidden md:block"
         >
           <Button className="bg-neutral-900/70 rounded-xl text-lg p-6 hover:bg-blue-700 hover:text-white">
             Portfolio <ArrowRight className="ml-4" />
           </Button>
         </Link>
+        <MobileNav/>
       </nav>
     </div>
   );

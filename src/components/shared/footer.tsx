@@ -5,20 +5,22 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 export default function Footer() {
   return (
-    <footer className="max-w-7xl mx-auto flex flex-row gap-2 justify-between py-12 w-full shrink-0 items-center px-12 border-t border-t-neutral-600">
-      <Avatar>
+    <footer className="md:max-w-7xl mx-auto flex flex-row gap-2 justify-between py-12 w-full shrink-0 items-center px-6 md:px-12 border-t border-t-neutral-600">
+  <div className="flex items-center">
+  <Avatar>
         <AvatarImage
           src="https://pbs.twimg.com/profile_images/1677046353451466752/JQtGE1MF_400x400.jpg"
           alt="User Avatar"
         />
         <AvatarFallback>33</AvatarFallback>
       </Avatar>
-      <p className="text-2xl font-semibold ml-2">33 Audits</p>
+      <p className="text-xl md:text-2xl font-semibold ml-2">33 Audits</p>
+  </div>
       <nav className="sm:ml-auto flex gap-4 sm:gap-6">
         <Link
           href="https://t.me/audits33"
           target="blank"
-          className="text-4xl hover:underline underline-offset-4"
+          className="text-2xl md:text-4xl hover:underline underline-offset-4"
           prefetch={false}
         >
           <i className="bi bi-telegram"></i>
@@ -26,7 +28,7 @@ export default function Footer() {
         <Link
           href="https://github.com/leeftk/leeftk/blob/main/README.md"
           target="blank"
-          className="text-4xl hover:underline underline-offset-4"
+          className="text-2xl md:text-4xl hover:underline underline-offset-4"
           prefetch={false}
         >
           <i className="bi bi-github"></i>
@@ -34,7 +36,7 @@ export default function Footer() {
         <Link
           href="https://x.com/solidityauditor"
           target="blank"
-          className="text-3xl hover:underline underline-offset-4"
+          className="text-xl md:text-3xl hover:underline underline-offset-4"
           prefetch={false}
         >
           <i className="bi bi-twitter-x"></i>

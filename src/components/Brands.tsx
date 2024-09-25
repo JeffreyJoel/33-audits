@@ -8,20 +8,20 @@ import Marquee from "react-fast-marquee";
 
 const Brands = () => {
   return (
-    <section className="w-full  md:mt-36 my-[36px] flex flex-col items-center md:gap-[42px] gap-[24px]">
+    <section className="w-full mt-20 md:mt-36 flex flex-col items-center md:gap-[42px] gap-[24px]">
       {/* <span className="bg-black/10 text-white text-sm md:text-4xl font-light flex justify-center items-center">
         Brand's we've worked with
       </span> */}
 
       <div className="w-full relative h-[65px] before:absolute before:left-0 before:top-0 md:before:w-[166px] before:w-[83px] before:h-full before:bg-gradient-to-r before:from-milkyBg before:via-milkyBg/50 before:to-milkyBg/10 before:z-10 after:absolute after:right-0 after:top-0 md:after:w-[166px] after:w-[83px] after:h-full after:bg-gradient-to-l after:from-milkyBg after:via-milkyBg/50 after:to-milkyBg/10 after:z-10">
         <Marquee className="h-full" pauseOnHover={true}>
-          <section className="flex items-center gap-44">
+          <section className="flex items-center gap-28 md:gap-44">
             <div className=" h-full w-[150px]">
               <Image
                 src={dein}
-                className="w-full"
-                alt="sponsor1"
-                width={660}
+                className="w-full ml-8"
+                alt="brand1"
+                width={400}
                 height={170}
                 quality={100}
               />
@@ -29,8 +29,8 @@ const Brands = () => {
             <div className=" h-full w-[150px]">
               <Image
                 src={juiceBox}
-                className="w-full grayscale"
-                alt="sponsor2"
+                className="w-full"
+                alt="brand2"
                 width={156}
                 height={56}
                 quality={100}
@@ -40,7 +40,7 @@ const Brands = () => {
               <Image
                 src={inverter}
                 className="w-full"
-                alt="sponsor3"
+                alt="brand3"
                 width={463}
                 height={168}
                 quality={100}
@@ -50,7 +50,7 @@ const Brands = () => {
               <Image
                 src={prophetBots}
                 className="w-full"
-                alt="sponsor4"
+                alt="brand4"
                 width={397}
                 height={168}
                 quality={100}

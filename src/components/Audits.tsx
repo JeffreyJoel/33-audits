@@ -34,8 +34,8 @@ const timelineData = [
 
 export function Audits() {
   return (
-    <div className="w-full mx-auto px-8 mt-36 pt-8 relative" id="audits">
-      <h1 className="text-center text-5xl">Audit Reports</h1>
+    <div className="w-full mx-auto px-8 mt-20 md:mt-36 pt-8 relative" id="audits">
+      <h1 className="text-center text-3xl md:text-5xl">Audit Reports</h1>
       <div className="flex flex-col lg:flex-row justify-center gap-24 mx-auto  items-center mt-8">
       
         <div className="w-[80%] lg:basis-[30%]  divide-zinc-800 relative">

@@ -13,20 +13,20 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="mx-auto mt-20 pt-8 text-center" id="home">
+    <div className="mx-auto mt-12 md:mt-20 pt-8 text-center" id="home">
 
         <div>
-          <h1 className="pt-4 text-center text-6xl font-bold tracking-tighter mx-auto">
+          <h1 className="pt-4 text-center text-5xl md:text-6xl font-bold tracking-tighter mx-auto">
             33 Audits
           </h1>
           {/* <div className="absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 from-blue-400 via-cyan-500 to-blue-600 [text-shadow:0_0_rgba(0,0,0,0.1)]">
         <span className="text-4xl font-bold">Exploding beams.</span>
       </div> */}
           <div>
-            <p className="mt-6 text-4xl">
+            <p className="mt-6 text-xl sm:text-2xl md:text-4xl">
               Securing Protocols, one Audit at a time
             </p>
-            <div className="mt-16 flex gap-8 mx-auto w-fit">
+            <div className="mt-16 flex flex-col md:flex-row gap-8 mx-auto w-fit">
               <Link
                 href="https://github.com/leeftk/leeftk/blob/main/README.md"
                 target="blank"
