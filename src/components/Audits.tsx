@@ -88,7 +88,7 @@ export function Audits() {
           target="blank"
         >
           <Button
-            className="rounded-xl text-lg p-6 cursor-pointer hover:bg-blue-700 hover:text-white"
+            className="rounded-xl text-base md:text-lg p-6 cursor-pointer hover:bg-blue-700 hover:text-white"
             variant={"secondary"}
           >
             Book an Audit <ArrowRight className="ml-4" />

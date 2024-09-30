@@ -9,7 +9,7 @@ const Testimonial = () => {
       <h1 className="text-center font-semibold  text-3xl md:text-5xl">
         What Our Clients Are Saying
       </h1>
-      <h2 className="relative font-regular text-lg text-gray-400 tracking-wide my-8 text-center max-w-3xl mx-auto antialiased">
+      <h2 className="relative font-regular text-base md:text-lg text-gray-400 tracking-wide my-8 text-center max-w-3xl mx-auto antialiased">
         We’re dedicated to securing smart contracts with thorough, expert
         audits. <br/>
         But don’t just take our word for it—see what our clients have to
