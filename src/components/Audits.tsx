@@ -35,9 +35,10 @@ const timelineData = [
 export function Audits() {
   return (
     <div className="w-full mx-auto px-8 mt-20 md:mt-36 pt-8 relative" id="audits">
-      <h1 className="text-center text-3xl md:text-5xl">Audit Reports</h1>
-      <div className="flex flex-col lg:flex-row justify-center gap-24 mx-auto  items-center mt-8">
-      
+       {/* <div className="absolute inset-0 h-[100px] w-[200px] bg-gradient-to-r from-blue-500 to-black transform scale-[0.80] bg-red-500 rounded-full blur-3xl" /> */}
+
+      <h1 className="text-center font-semibold text-3xl md:text-5xl">Recent Audit Reports</h1>
+      <div className="flex flex-col lg:flex-row justify-center gap-24 mx-auto  items-center mt-8">      
         <div className="w-[80%] lg:basis-[30%]  divide-zinc-800 relative">
           <div className="absolute h-full w-[4px] bg-gradient-to-b from-transparent via-[#2565f1] to-transparent -left-4 md:-left-10">
             <span
@@ -93,6 +94,8 @@ export function Audits() {
           </Button>
         </Link>
       </div>
+      {/* <div className="absolute bottom-[200px]  -right-0 inset-0 h-[100px] w-[100px] bg-gradient-to-r from-blue-500 to-black transform scale-[0.80] bg-red-500 rounded-full blur-3xl" /> */}
+
     </div>
   );
 }

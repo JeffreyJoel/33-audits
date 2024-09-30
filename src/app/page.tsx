@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       {/* <div className="w-full absolute inset-0 h-full"> */}
-        <SparklesCore
+        {/* <SparklesCore
           id="tsparticlesfullpage"
           background="transparent"
           minSize={0.6}
@@ -18,7 +18,7 @@ export default function Home() {
           particleDensity={100}
           className="w-full h-full fixed inset-0"
           particleColor="#FFFFFF"
-        />
+        /> */}
       {/* </div> */}
     <div className="absolute mx-auto left-0 right-0">
     <NavBar />
