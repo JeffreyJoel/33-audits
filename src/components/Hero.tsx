@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="mx-auto mt-12 md:mt-20 pt-8 text-center" id="home">
+    <div className="mx-auto mt-12 md:mt-24 pt-8 text-center" id="home">
       <div className="relative px-8 md:px-0">
         <h1 className="text-4xl md:text-6xl font-bold mb-8 mt-18 relative text-center text-white max-w-6xl mx-auto !leading-snug __className_399708">
           Crafting Secure Smart Contracts <br />

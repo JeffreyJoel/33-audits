@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Check } from "lucide-react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
@@ -13,6 +13,7 @@ const timelineData = [
       "Found 4 High risk vulnerabilities",
       "Found 14 Medium risk vulnerabilities",
     ],
+    audit_report: "https://github.com/leeftk/audit-reports/blob/main/private%20audits/juicebox-eth-audit-report-v4.pdf"
   },
   {
     protocol: "Dein",
@@ -21,6 +22,7 @@ const timelineData = [
       "Found 1 High risk vulnerabilities",
       "Found 5 Medium risk vulnerabilities",
     ],
+    audit_report: "https://github.com/leeftk/audit-reports/blob/main/private%20audits/Dein-audit-report-%202.pdf"
   },
   {
     protocol: "StakeTogether",
@@ -29,6 +31,7 @@ const timelineData = [
       "Found  6 Medium risk vulnerabilities",
       "Found 12 Low risk vulnerabilities",
     ],
+    audit_report: "https://github.com/sensesecurity/reporter/blob/main/output/StakeTogether_20231130160542.md"
   },
 ];
 
@@ -75,6 +78,9 @@ export function Audits() {
                     </span>
                   </div>
                 ))}
+                <Link href={protocol.audit_report} target="blank" className="ml-5 mt-4 text-zinc-200 underline flex hover:text-blue-600">
+                Audit Report <ArrowUpRight className="text-[3px] w-4" />
+                </Link>
               </div>
             </div>
           ))}
