@@ -8,7 +8,7 @@ import profile from "../../assets/profile.jpg";
 
 export default function Footer() {
   return (
-    <footer className="md:max-w-7xl mx-auto flex flex-row gap-2 justify-between py-12 w-full shrink-0 items-center px-6 md:px-12 border-t border-t-neutral-600">
+    <footer className="relative md:max-w-7xl mx-auto flex flex-row gap-2 justify-between py-12 w-full shrink-0 items-center px-6 md:px-12 border-t border-t-neutral-600">
   <div className="flex items-center">
   <Avatar>
         <AvatarImage
@@ -50,6 +50,9 @@ export default function Footer() {
           <i className="bi bi-twitter-x"></i>
         </Link>
       </nav>
+      {/* <div className="absolute bottom-0 left-0  h-[100px] w-[100px] bg-gradient-to-r from-blue-800 to-black transform scale-[0.80] bg-red-500 rounded-full blur-3xl" /> */}
+      {/* <div className="absolute bottom-0 -right-[100px]  h-[150px] w-[150px] bg-gradient-to-r from-blue-900 to-black transform scale-[0.80] bg-red-500 rounded-full blur-3xl" /> */}
+
     </footer>
   );
 }

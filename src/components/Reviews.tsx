@@ -3,7 +3,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 const Testimonial = () => {
   return (
     <main
-      className="w-full flex flex-col items-center mt-20 pt-8 mb-28 lg:px-20 md:px-16 px-4"
+      className="w-full relative flex flex-col items-center mt-20 pt-8 mb-28 lg:px-20 md:px-16 px-4"
       id="reviews"
     >
       <h1 className="text-center font-semibold  text-3xl md:text-5xl">
