@@ -32,7 +32,7 @@ export default function NavBar() {
           <ScrollLink
             to={"home"}
             smooth={true}
-            duration={500}
+            duration={800}
             className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
           >
             Home
@@ -41,7 +41,7 @@ export default function NavBar() {
           <ScrollLink
             to={"audits"}
             smooth={true}
-            duration={500}
+            duration={800}
             className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
           >
             Audits
@@ -49,7 +49,7 @@ export default function NavBar() {
           <ScrollLink
             to={"reviews"}
             smooth={true}
-            duration={500}
+            duration={800}
             className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
           >
             Reviews
