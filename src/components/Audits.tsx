@@ -27,7 +27,7 @@ const timelineData = [
   {
     protocol: "StakeTogether",
     findings: [
-      "Found 1 High vulnerability",
+      "Found 1 High risk vulnerability",
       "Found  6 Medium risk vulnerabilities",
       "Found 12 Low risk vulnerabilities",
     ],
