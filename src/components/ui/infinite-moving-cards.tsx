@@ -73,7 +73,7 @@ export const InfiniteMovingCards = ({
         <div
             ref={containerRef}
             className={cn(
-                "scroller relative z-20  md:max-w-7xl max-w-full overflow-x-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,tra]",
+                "scroller relative z-20  md:max-w-7xl max-w-full overflow-x-hidden",
                 className
             )} style={{ overflowX: "hidden" }}
         >
@@ -87,24 +87,24 @@ export const InfiniteMovingCards = ({
             >
                 {items.map((item, index) => (
                     <li
-                        className="w-[350px] max-w-full relative rounded-2xl flex-shrink-0 bg-neutral-900/70 px-8 py-6 md:w-[450px]"
+                        className="w-[350px] max-w-full relative rounded-2xl flex-shrink-0 bg-[#18181B] px-8 py-6 md:w-[450px]"
                    
                         key={index}
                     >
                         <blockquote>
                             <div
-                                aria-hidden="true"
+                                aria-hidden="false"
                                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
                             ></div>
-                            <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
+                            <span className=" relative z-20 text-lg leading-[1.6] text-gray-200 font-medium">
                                 {item.message}
                             </span>
                             <div className="relative z-20 mt-6 flex flex-row items-center">
                                 <span className="flex flex-col gap-1">
-                                    <span className=" text-sm leading-[1.6] text-gray-400 font-normal font-belanosima">
+                                    <span className=" text-lg leading-[1.6] text-gray-400 font-medium font-belanosima">
                                         {item.name}
                                     </span>
-                                    <span className=" text-sm leading-[1.6] text-gray-400 font-normal font-belanosima">
+                                    <span className=" text-lg leading-[1.6] text-gray-400 font-medium font-belanosima">
                                         {item.title}
                                     </span>
                                 </span>

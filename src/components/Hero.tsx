@@ -33,7 +33,7 @@ export default function Hero() {
           {/* <p className="mt-6 text-xl sm:text-2xl md:text-4xl">
               Securing Protocols, one Audit at a time
             </p> */}
-          <h2 className="relative font-regular text-base md:text-xl text-gray-300 tracking-wide mb-8 text-center max-w-3xl mx-auto antialiased">
+          <h2 className="relative font-medium text-base md:text-xl text-gray-400 tracking-wide mb-8 text-center max-w-3xl mx-auto antialiased">
             We’ve got your back when it comes to protecting your protocol
              and securing your data. Clear processes, real results, and a
             commitment to top-notch delivery every step of the way.
@@ -64,26 +64,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      {/* <div className="flex flex-wrap justify-center w-fit mx-auto mt-16 gap-8">
-        <Card className="w-[350px] bg-neutral-900/70 text-white border-gray-800 p-5 pb-3 rounded-xl">
-          <CardContent className="">
-            <h3 className="text-6xl mb-2 font-medium">50K+</h3>
-            <p className="text-gray-300 text-lg">Lines of code audited</p>
-          </CardContent>
-        </Card>
-        <Card className="w-[350px] bg-neutral-900/70 text-white border-gray-800 p-5 pb-0 rounded-xl">
-          <CardContent className="">
-            <h3 className="text-6xl mb-2 font-medium">50K+</h3>
-            <p className="text-gray-300 text-lg">Lines of code audited</p>
-          </CardContent>
-        </Card>
-        <Card className="w-[350px] bg-neutral-900/70 text-white border-gray-800 p-5 pb-0 rounded-xl">
-          <CardContent className="">
-            <h3 className="text-6xl mb-2 font-medium">50K+</h3>
-            <p className="text-gray-300 text-lg">Lines of code audited</p>
-          </CardContent>
-        </Card>
-      </div> */}
     </div>
   );
 }

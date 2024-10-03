@@ -13,7 +13,7 @@ export default function NavBar() {
   return (
     <div className=" md:max-w-5xl mx-auto">
       <nav className="flex items-center justify-between p-4 mt-4 md:mt-8 text-white">
-        <div className="flex justify-between items-center space-x-4 p-2 px-5 md:bg-neutral-900/70 w-9/12 rounded-2xl">
+        <div className="flex justify-between items-center space-x-4 p-2 px-5 w-9/12 rounded-2xl">
           <div className="flex items-center gap-4">
             <Avatar>
               <AvatarImage
@@ -27,13 +27,13 @@ export default function NavBar() {
                 />
               </AvatarFallback>
             </Avatar>
-            <span className="font-semibold text-xl">33 Audits</span>
+            <span className="font-semibold text-2xl">33 Audits</span>
           </div>
           <ScrollLink
             to={"home"}
             smooth={true}
             duration={500}
-            className="hidden md:block hover:underline text-lg cursor-pointer hover:text-blue-400"
+            className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
           >
             Home
           </ScrollLink>
@@ -42,7 +42,7 @@ export default function NavBar() {
             to={"audits"}
             smooth={true}
             duration={500}
-            className="hidden md:block hover:underline text-lg cursor-pointer hover:text-blue-400"
+            className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
           >
             Audits
           </ScrollLink>
@@ -50,7 +50,7 @@ export default function NavBar() {
             to={"reviews"}
             smooth={true}
             duration={500}
-            className="hidden md:block hover:underline text-lg cursor-pointer hover:text-blue-400"
+            className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
           >
             Reviews
           </ScrollLink>
@@ -61,7 +61,7 @@ export default function NavBar() {
           target="blank"
           className="hidden md:block"
         >
-          <Button className="bg-neutral-900/70 rounded-xl text-lg p-6 hover:bg-blue-700 hover:text-white">
+          <Button className="bg-blue-700 rounded-xl text-lg p-6 hover:bg-blue-800 hover:text-white">
             Portfolio <ArrowRight className="ml-4" />
           </Button>
         </Link>

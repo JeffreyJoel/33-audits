@@ -73,12 +73,12 @@ export function Audits() {
                       className="text-blue-700 mt-[3px] flex-shrink-0"
                       size={16}
                     />
-                    <span className="text-zinc-400 md:text-base">
+                    <span className="text-zinc-100 font-medium md:text-xl">
                       {finding}
                     </span>
                   </div>
                 ))}
-                <Link href={protocol.audit_report} target="blank" className="ml-5 mt-4 text-zinc-200 underline flex hover:text-blue-600">
+                <Link href={protocol.audit_report} target="blank" className="ml-5 mt-4 text-zinc-200 underline flex font-medium md:text-xl hover:text-blue-600">
                 Audit Report <ArrowUpRight className="text-[3px] w-4" />
                 </Link>
               </div>
