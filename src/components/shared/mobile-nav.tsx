@@ -23,7 +23,7 @@ export function MobileNav() {
       <SheetTrigger asChild>
         <MenuIcon className="text-4xl block md:hidden cursor-pointer" />
       </SheetTrigger>
-      <SheetContent className="bg-neutral-950 border-0">
+      <SheetContent className="bg-[#030612] border-0">
         <SheetHeader>
           {/* <SheetTitle>Edit profile</SheetTitle> */}
           {/* <SheetDescription>
@@ -75,9 +75,7 @@ export function MobileNav() {
         </Link>
         </div>
 
-  
-
-        <SheetFooter>
+        <SheetFooter className="justify-start sm:justify-start">
         <div className=" flex gap-6 mt-12">
         <Link
           href="https://t.me/audits33"

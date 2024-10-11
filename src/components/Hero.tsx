@@ -22,7 +22,7 @@ export default function Hero() {
             {" "}
             Unmatched Expertise & &amp; Reliability
           </span>
-       <div className="absolute mx-auto my-auto inset-0 h-[100px] w-[100px] bg-gradient-to-r from-blue-900 to-black transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+       {/* <div className="absolute mx-auto my-auto inset-0 h-[100px] w-[100px] bg-gradient-to-r from-blue-900 to-black transform scale-[0.80] bg-red-500 rounded-full blur-3xl" /> */}
 
         </h1>
         {/* <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
@@ -33,7 +33,7 @@ export default function Hero() {
           {/* <p className="mt-6 text-xl sm:text-2xl md:text-4xl">
               Securing Protocols, one Audit at a time
             </p> */}
-          <h2 className="relative font-medium text-base md:text-xl text-gray-400 tracking-wide mb-8 text-center max-w-3xl mx-auto antialiased">
+          <h2 className="relative font-medium text-base md:text-xl text-gray-200 tracking-wide mb-8 text-center max-w-3xl mx-auto antialiased">
             We’ve got your back when it comes to protecting your protocol
              and securing your data. Clear processes, real results, and a
             commitment to top-notch delivery every step of the way.

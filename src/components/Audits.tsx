@@ -38,8 +38,8 @@ const timelineData = [
 export function Audits() {
   return (
     <div className="w-full mx-auto px-8 mt-20 md:mt-36 pt-8 relative" id="audits">
-       <div className="absolute inset-0  h-[100px] w-[200px] bg-gradient-to-r from-blue-800 to-black transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-       <div className="absolute bottom-20 right-0 mx-auto h-[100px] w-[200px] bg-gradient-to-r from-blue-900 to-black transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+       {/* <div className="absolute inset-0  h-[100px] w-[200px] bg-gradient-to-r from-blue-800 to-black transform scale-[0.80] bg-red-500 rounded-full blur-3xl" /> */}
+       {/* <div className="absolute bottom-20 right-0 mx-auto h-[100px] w-[200px] bg-gradient-to-r from-blue-900 to-black transform scale-[0.80] bg-red-500 rounded-full blur-3xl" /> */}
 
       <h1 className="text-center font-semibold text-3xl md:text-5xl">Recent Audit Reports</h1>
       <div className="flex flex-col lg:flex-row justify-center gap-24 mx-auto  items-center mt-8">      

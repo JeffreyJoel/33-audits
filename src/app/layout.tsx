@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Space_Grotesk } from "next/font/google";
+import { Space_Grotesk, DM_Sans } from "next/font/google";
 
 
 const agrandir = localFont({
@@ -16,6 +16,10 @@ const geistMono = localFont({
 });
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"]
+});
+const dm_sans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
 });
 export const metadata: Metadata = {
   title: "33 Audits",
@@ -33,7 +37,7 @@ export default function RootLayout({
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></link>
       </head>
       <body
-        className={`${space_grotesk.className} antialiased`}
+        className={`${dm_sans.className} antialiased`}
       >
         {children}
       </body>
