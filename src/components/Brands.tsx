@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import dein from "@/assets/brand_images/Dein.png";
+import dein from "@/assets/brand_images/Dein.svg";
 import juiceBox from "@/assets/brand_images/juice-logo-full_white.b786ee4b.svg";
 import inverter from "@/assets/brand_images/inverter_text_logo_light.svg";
 import prophetBots from "@/assets/brand_images/prophetbots_logo.svg";
@@ -19,7 +19,7 @@ const Brands = () => {
                 src={dein}
                 className="w-full ml-8"
                 alt="brand1"
-                width={400}
+                width={300}
                 height={170}
                 quality={100}
               />
