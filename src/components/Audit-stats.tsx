@@ -7,7 +7,7 @@ const AuditStats = () => {
       {/* <div className="w-fit"> */}
       <Card className=" bg-gradient-to-br border-0 rounded-lg from-blue-600 to-blue-800 text-white py-1 md:py-5">
         <CardHeader>
-          <CardTitle className="text-3xl md:text-5xl font-bold"> &gt;100,000</CardTitle>
+          <CardTitle className="text-3xl lg:text-4xl md:text-5xl font-bold"> &gt;100,000</CardTitle>
         </CardHeader>
         <CardContent>
           <p className="text-blue-200 font-semibold md:text-lg">
@@ -47,7 +47,7 @@ const AuditStats = () => {
 
       <Card className="bg-neutral-900/70 border-0 rounded-2xl py-1 md:py-5 text-white">
         <CardHeader>
-          <CardTitle className="text-3xl md:text-5xl font-bold">
+          <CardTitle className="text-3xl lg:text-4xl md:text-5xl font-bold">
             60+
           </CardTitle>
         </CardHeader>
