@@ -89,6 +89,9 @@ const config: Config = {
 					color: '#f8f8f8',
                     transition: 'color 0.3s ease',
 				},
+				h3:{
+					color: '#f8f8f8',
+				},
 				h2:{
 					color: '#f8f8f8',
 				},

@@ -20,7 +20,7 @@ function BlogCard({ post }: { post: Post }) {
   const slug = convertTitleToSlug(post?.title || "");
   return (
     <Card className="max-w-[380px] mx-auto relative bg-gray-900 text-white border border-slate-950 hover:border-blue-700  md:max-w-sm hover:shadow-sm hover:shadow-blue-700 transition-all duration-300 rounded-2xl cursor-pointer">
-      <Link href={`/post/${slug}`}>
+      <Link href={`/blog/${slug}`}>
       {
         post?.coverImage?.url ?
         <Image
