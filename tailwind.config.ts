@@ -88,6 +88,12 @@ const config: Config = {
 				a:{
 					color: '#f8f8f8',
                     transition: 'color 0.3s ease',
+				},
+				h2:{
+					color: '#f8f8f8',
+				},
+				h1:{
+					color: '#f8f8f8',
 				}
 			  },
 			},

@@ -8,12 +8,10 @@ interface Post {
     id?: number;
     title?: string;
     content?: string;
-    createdAt?: number;
+    publishedAt?: number;
     post_url?: string;
     coverImage?: {url:string};
     brief?: string;
-    platform?: string;
-    creator_address?: string;
   }
 
 
@@ -21,7 +19,7 @@ function BlogCard({ post }: { post: Post }) {
 
   const slug = convertTitleToSlug(post?.title || "");
   return (
-    <Card className="max-w-[380px] mx-auto relative bg-blue-700 text-white border border-slate-950 md:max-w-sm hover:shadow-lg transition-shadow duration-300 rounded-2xl cursor-pointer">
+    <Card className="max-w-[380px] mx-auto relative bg-gray-900 text-white border border-slate-950 hover:border-blue-700  md:max-w-sm hover:shadow-sm hover:shadow-blue-700 transition-all duration-300 rounded-2xl cursor-pointer">
       <Link href={`/post/${slug}`}>
         <Image
           src={post?.coverImage?.url || "https://pbs.twimg.com/profile_images/1677046353451466752/JQtGE1MF_400x400.jpg"}
@@ -33,11 +31,11 @@ function BlogCard({ post }: { post: Post }) {
         <CardContent className="px-6 pt-3 pb-10 text-white space-y-3">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             {/* <CalendarDaysIcon className="w-4 h-4" /> */}
-            <span>{post.createdAt}</span>
+            <span>{post.publishedAt}</span>
           </div>
-          <h3 className="text-xl text-white font-bold">{post?.title}</h3>
+          <h3 className="text-2xl text-white font-bold">{post?.title}</h3>
           <p className="text-muted-white h-[100px]">
-            {post?.brief?.slice(0, 150) + "..."}
+            {post?.brief?.slice(0, 100) + "..."}
           </p>
         </CardContent>
       </Link>

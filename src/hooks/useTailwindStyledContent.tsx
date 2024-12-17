@@ -13,7 +13,7 @@ export const TailwindStyledContent = ({ content }: { content: any }) => {
             newProps.className = "text-2xl font-semibold mb-4";
             break;
           case "h2":
-            newProps.className = "text-xl font-semibold mb-3";
+            newProps.className = "text-[#f8f8f8]text-xl font-semibold mb-3";
             break;
           case "h3":
             newProps.className = "text-xl font-medium mb-2";

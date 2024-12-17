@@ -4,6 +4,7 @@ interface HashnodeArticle {
   node: {
     title: string;
     brief: string;
+    
     coverImage?: {
       url: string;
     };
@@ -91,6 +92,7 @@ export function useHashnodeArticleDetails() {
               post(slug: $slug) {
                 title
                 brief
+                readTimeInMinutes
                 coverImage {
                   url
                 }

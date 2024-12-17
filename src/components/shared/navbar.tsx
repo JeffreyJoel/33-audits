@@ -9,7 +9,11 @@ import { Link as ScrollLink, Element } from "react-scroll";
 import { MobileNav } from "./mobile-nav";
 import Image from "next/image";
 
-export default function NavBar() {
+interface NavBarProps {
+  isHome?: boolean;
+}
+
+export default function NavBar({ isHome = true }: NavBarProps) {
   return (
     <div className=" md:max-w-6xl mx-auto">
       <nav className="flex items-center justify-between p-4 mt-4 md:mt-6 text-white">
@@ -30,22 +34,42 @@ export default function NavBar() {
             Home
           </Link>
 
-          <ScrollLink
-            to={"audits"}
-            smooth={true}
-            duration={800}
-            className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
-          >
-            Audits
-          </ScrollLink>
-          <ScrollLink
-            to={"reviews"}
-            smooth={true}
-            duration={800}
-            className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
-          >
-            Reviews
-          </ScrollLink>
+          {isHome ? (
+            <>
+              <ScrollLink
+                to={"audits"}
+                smooth={true}
+                duration={800}
+                className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
+              >
+                Audits
+              </ScrollLink>
+              <ScrollLink
+                to={"reviews"}
+                smooth={true}
+                duration={800}
+                className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
+              >
+                Reviews
+              </ScrollLink>
+            </>
+          ) : (
+            <>
+              <Link
+                href="/?#audits"
+                className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
+              >
+                Audits
+              </Link>
+              <Link
+                href="/?#reviews"
+                className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
+              >
+                Reviews
+              </Link>
+            </>
+          )}
+
           <Link
             href="/blog"
             className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
