@@ -72,9 +72,30 @@ const config: Config = {
 			  },
 			},
 		  },
+
+		  typography: {
+			DEFAULT: {
+			  css: {
+				strong: {
+				  color: '#f8f8f8'
+				},
+				code:{
+					color: '#f8f8f8',
+					backgroundColor: '#1f1f1f',
+					padding: '0.25em',
+                    borderRadius: 'var(--radius)',
+				},
+				a:{
+					color: '#f8f8f8',
+                    transition: 'color 0.3s ease',
+				}
+			  },
+			},
+		  },
+		// },
   	}
   },
-  plugins: [require("tailwindcss-animate"), addVariablesForColors],
+  plugins: [require("tailwindcss-animate"), addVariablesForColors, require("@tailwindcss/typography")],
 };
 function addVariablesForColors({ addBase, theme }: any) {
 	let allColors = flattenColorPalette(theme("colors"));

@@ -6,37 +6,29 @@ import { Button } from "@/components/ui/button";
 import profile from "../../assets/profile.jpg";
 import { ArrowRight } from "lucide-react";
 import { Link as ScrollLink, Element } from "react-scroll";
-import {MobileNav} from "./mobile-nav";
+import { MobileNav } from "./mobile-nav";
 import Image from "next/image";
 
 export default function NavBar() {
   return (
-    <div className=" md:max-w-5xl mx-auto">
-      <nav className="flex items-center justify-between p-4 mt-4 md:mt-8 text-white">
-        <div className="flex justify-between items-center space-x-4 p-2 px-5 w-9/12 rounded-2xl">
+    <div className=" md:max-w-6xl mx-auto">
+      <nav className="flex items-center justify-between p-4 mt-4 md:mt-6 text-white">
+        <div className="flex justify-between items-center p-2 px-6 w-9/12 rounded-2xl">
           <div className="flex items-center gap-4">
             <Avatar>
-              <AvatarImage
-                src=""
-                alt="User Avatar"
-              />
+              <AvatarImage src="" alt="User Avatar" />
               <AvatarFallback>
-                <Image
-                src={profile}
-                alt="33 audits"
-                />
+                <Image src={profile} alt="33 audits" />
               </AvatarFallback>
             </Avatar>
             <span className="font-semibold text-2xl">33 Audits</span>
           </div>
-          <ScrollLink
-            to={"home"}
-            smooth={true}
-            duration={800}
+          <Link
+            href="/"
             className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
           >
             Home
-          </ScrollLink>
+          </Link>
 
           <ScrollLink
             to={"audits"}
@@ -54,7 +46,12 @@ export default function NavBar() {
           >
             Reviews
           </ScrollLink>
-          <span></span>
+          <Link
+            href="/blog"
+            className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
+          >
+            Blog
+          </Link>
         </div>
         <Link
           href="https://github.com/leeftk/leeftk/blob/main/README.md"
@@ -65,7 +62,7 @@ export default function NavBar() {
             Portfolio <ArrowRight className="ml-4" />
           </Button>
         </Link>
-        <MobileNav/>
+        <MobileNav />
       </nav>
     </div>
   );
