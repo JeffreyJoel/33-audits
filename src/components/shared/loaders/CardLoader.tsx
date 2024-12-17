@@ -5,8 +5,8 @@ export default function CardLoader() {
   return (
     <div className="grid max-w-7xl mx-auto gap-6 md:grid-cols-2 lg:grid-cols-3">
       {[1, 2, 3, 4, 5, 6].map((i) => (
-        <Card key={i} className="overflow-hidden rounded-2xl bg-gray-950">
-          <Skeleton className="h-[200px] bg-gray-500" />
+        <Card key={i} className="overflow-hidden rounded-2xl border-0  bg-gray-950">
+          <Skeleton className="h-[200px] bg-gray-500 border border-gray-950" />
           <CardContent className="p-6">
             <div className="space-y-4">
               <Skeleton className="h-5 w-2/3 bg-gray-500" />
