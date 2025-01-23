@@ -9,7 +9,7 @@ import Marquee from "react-fast-marquee";
 const Brands = () => {
   return (
     <section className="w-full mx-auto mt-20 md:mt-40 flex flex-col items-center md:gap-[42px] gap-[24px]">
-    <h2 className="font-semibold text-base md:text-xl text-gray-800 tracking-wide text-center mb-2 relative z-40 px-8 md:px-0">Unmatched expertise in Web3 security and development</h2>
+    <h2 className="font-semibold text-base md:text-xl text-foreground tracking-wide text-center mb-0 relative z-40 px-8 md:px-0">Unmatched expertise in Web3 security and development</h2>
 
       <div className="w-full relative h-[70px] before:absolute before:left-0 before:top-0 md:before:w-[166px] before:w-[83px] before:h-full bg-zinc-950/90 before:bg-gradient-to-r before:from-foreground before:via-foreground/50 before:to-foreground/10 before:z-10 after:absolute after:right-0 after:top-0 md:after:w-[166px] after:w-[83px] after:h-full after:bg-gradient-to-l after:from-foreground after:via-foreground/50 after:to-foreground/10 after:z-10">
         <Marquee className="h-full" pauseOnHover={true}>
