@@ -16,9 +16,9 @@ interface NavBarProps {
 export default function NavBar({ isHome = true }: NavBarProps) {
   return (
     <div className=" md:max-w-6xl mx-auto">
-      <nav className="flex items-center justify-between p-4 mt-4 md:mt-6 text-white">
+      <nav className="flex items-center justify-between p-4 mt-4 md:mt-6 text-foreground">
         <div className="flex justify-between items-center p-2 px-6 w-9/12 rounded-2xl">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-0">
             <Avatar>
               <AvatarImage src="" alt="User Avatar" />
               <AvatarFallback>
@@ -29,7 +29,7 @@ export default function NavBar({ isHome = true }: NavBarProps) {
           </div>
           <Link
             href="/"
-            className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
+            className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-600"
           >
             Home
           </Link>
@@ -40,39 +40,39 @@ export default function NavBar({ isHome = true }: NavBarProps) {
                 to={"audits"}
                 smooth={true}
                 duration={800}
-                className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
+                className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-600"
               >
                 Audits
               </ScrollLink>
-              <ScrollLink
+              {/* <ScrollLink
                 to={"reviews"}
                 smooth={true}
                 duration={800}
-                className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
+                className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-600"
               >
                 Reviews
-              </ScrollLink>
+              </ScrollLink> */}
             </>
           ) : (
             <>
               <Link
                 href="/?#audits"
-                className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
+                className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-600"
               >
                 Audits
               </Link>
-              <Link
+              {/* <Link
                 href="/?#reviews"
-                className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
+                className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-600"
               >
                 Reviews
-              </Link>
+              </Link> */}
             </>
           )}
 
           <Link
             href="/blog"
-            className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-400"
+            className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-600"
           >
             Blog
           </Link>
@@ -86,7 +86,10 @@ export default function NavBar({ isHome = true }: NavBarProps) {
             Portfolio <ArrowRight className="ml-4" />
           </Button>
         </Link>
+        <div className="block md:hidden">
         <MobileNav />
+        </div>
+    
       </nav>
     </div>
   );

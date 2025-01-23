@@ -76,8 +76,8 @@ export default function SinglePost() {
                 ""
               )}
               {/*  */}
-              <div className="px-4 lg:px-0 mt-2 md:mt-12 text-[#fafafa] max-w-screen-md mx-auto text-lg leading-relaxed prose">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl leading-tight text-center uppercase font-bold text-[#fafafa]  mb-5">
+              <div className="px-4 lg:px-0 mt-2 md:mt-12 text-foreground/90 max-w-screen-md mx-auto text-lg leading-relaxed prose">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl leading-tight text-center uppercase font-bold text-foreground/90  mb-5">
                   {hashnodeDetails?.title}
                 </h1>
 
@@ -93,7 +93,7 @@ export default function SinglePost() {
                   </span>
                 </div>
 
-                <div className="mb-10 text-white">
+                <div className="mb-10 text-foreground">
                   <TailwindStyledContent
                     content={hashnodeDetails?.content?.html || ""}
                   />

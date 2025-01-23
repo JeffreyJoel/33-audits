@@ -16,7 +16,7 @@ const AuditStats = () => {
         </CardContent>
       </Card>
    
-      <Card className="bg-neutral-900/70 border-0 rounded-2xl text-white py-1 md:py-5 row-span-2">
+      <Card className="bg-neutral-950 border-0 rounded-2xl text-white py-1 md:py-5 row-span-2">
         <CardHeader>
           <CardTitle className="text-2xl font-bold">Audit statistics</CardTitle>
         </CardHeader>
@@ -45,14 +45,14 @@ const AuditStats = () => {
         </CardContent>
       </Card>
 
-      <Card className="bg-neutral-900/70 border-0 rounded-2xl py-1 md:py-5 text-white">
+      <Card className="bg-neutral-950/90 border-0 rounded-2xl py-1 md:py-5 text-white">
         <CardHeader>
           <CardTitle className="text-3xl lg:text-4xl md:text-5xl font-bold">
             60+
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-gray-400 font-semibold md:text-lg">
+          <p className="text-gray-200 font-semibold md:text-lg">
           Critical, High & Medium vulnerabilities discovered
           </p>
         </CardContent>

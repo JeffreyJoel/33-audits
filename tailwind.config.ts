@@ -77,7 +77,7 @@ const config: Config = {
 			DEFAULT: {
 			  css: {
 				strong: {
-				  color: '#f8f8f8'
+				  color: 'foreground'
 				},
 				code:{
 					color: '#f8f8f8',
@@ -86,17 +86,17 @@ const config: Config = {
                     borderRadius: 'var(--radius)',
 				},
 				a:{
-					color: '#f8f8f8',
+					color: 'foreground',
                     transition: 'color 0.3s ease',
 				},
 				h3:{
-					color: '#f8f8f8',
+					color: 'foreground',
 				},
 				h2:{
-					color: '#f8f8f8',
+					color: 'foreground',
 				},
 				h1:{
-					color: '#f8f8f8',
+					color: 'foreground',
 				}
 			  },
 			},

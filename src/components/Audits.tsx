@@ -59,8 +59,8 @@ export function Audits() {
           </div>
           {timelineData.map((protocol, index) => (
             <div key={protocol.protocol} className="border-b border-zinc-800">
-              <h1 className="text-2xl font-bold text-zinc-200 my-8 relative">
-                <div className="h-3 md:h-4 w-3 md:w-4 border-2 border-slate-500 bg-zinc-300 rounded-full absolute -left-[20px] md:-left-[46px] top-2 md:top-1"></div>
+              <h1 className="text-2xl font-bold text-zinc-800 my-8 relative">
+                <div className="h-3 md:h-4 w-3 md:w-4 border-2 border-blue-500 bg-blue-500 rounded-full absolute -left-[20px] md:-left-[46px] top-2 md:top-1"></div>
                 {protocol.protocol}
               </h1>
               <div className="mb-8">
@@ -73,12 +73,12 @@ export function Audits() {
                       className="text-blue-700 mt-[3px] flex-shrink-0"
                       size={16}
                     />
-                    <span className="text-zinc-100 font-medium md:text-xl">
+                    <span className="text-zinc-700 font-medium md:text-xl">
                       {finding}
                     </span>
                   </div>
                 ))}
-                <Link href={protocol.audit_report} target="blank" className="ml-5 mt-4 text-zinc-200 underline flex font-medium md:text-xl hover:text-blue-600">
+                <Link href={protocol.audit_report} target="blank" className="ml-5 mt-4 text-zinc-800 underline flex font-medium md:text-xl hover:text-blue-600">
                 Audit Report <ArrowUpRight className="text-[3px] w-4" />
                 </Link>
               </div>
@@ -88,13 +88,13 @@ export function Audits() {
         <AuditStats />
       </div>
       
-      <div className="w-fit mt-12 mx-auto">
+      <div className="w-fit mt-12 mx-auto mb-8">
         <Link
           href="https://app.deform.cc/form/6d07745a-8a46-4445-b064-4755c72e8c4b/?page_number=0"
           target="blank"
         >
           <Button
-            className="rounded-xl text-base md:text-lg p-6 cursor-pointer hover:bg-blue-700 hover:text-white"
+            className="rounded-xl text-base md:text-lg p-6 bg-blue-700 text-white border border-blue-700 cursor-pointer hover:bg-blue-500"
             variant={"secondary"}
           >
             Book an Audit <ArrowRight className="ml-4" />

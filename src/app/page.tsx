@@ -15,7 +15,7 @@ export default function Home() {
         <Hero />
         <Brands/>
         <Audits />
-        <Testimonial/>
+        {/* <Testimonial/> */}
         <Footer/>
       </div>
     </div>

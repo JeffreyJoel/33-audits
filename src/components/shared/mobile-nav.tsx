@@ -19,11 +19,12 @@ export function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+    <div className=" ">
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger asChild>
         <MenuIcon className="text-4xl block md:hidden cursor-pointer" />
       </SheetTrigger>
-      <SheetContent className="bg-[#030612] border-0">
+      <SheetContent className="block md:hidden bg-[#f8f8f8] border-0">
         <SheetHeader>
           {/* <SheetTitle>Edit profile</SheetTitle> */}
           {/* <SheetDescription>
@@ -52,7 +53,7 @@ export function MobileNav() {
             Audits
           </ScrollLink>
 
-          <ScrollLink
+          {/* <ScrollLink
             to="reviews"
             smooth={true}
             duration={500}
@@ -60,14 +61,14 @@ export function MobileNav() {
             onClick={() => setIsOpen(false)}
           >
             Reviews
-          </ScrollLink>
+          </ScrollLink> */}
 
           <Link
           href="https://app.deform.cc/form/6d07745a-8a46-4445-b064-4755c72e8c4b/?page_number=0"
           target="blank"
         >
           <Button
-            className="rounded-xl p-4 cursor-pointer hover:bg-blue-700 hover:text-white"
+            className="rounded-xl p-4 cursor-pointer bg-blue-700 hover:bg-blue-500 text-white"
             variant={"secondary"}
           >
             Book an Audit <ArrowRight className="ml-4" />
@@ -105,5 +106,6 @@ export function MobileNav() {
         </SheetFooter>
       </SheetContent>
     </Sheet>
+    </div>
   );
 }

@@ -25,7 +25,7 @@ export default function Blog() {
         <h1 className="text-center font-semibold text-3xl mb-8 md:text-5xl">
           Blog
         </h1>
-        <p className="my-4 font-medium text-base md:text-xl text-gray-200 tracking-wide mb-8 text-center max-w-3xl mx-auto antialiased">
+        <p className="my-4 font-medium text-base md:text-xl text-gray-800 tracking-wide mb-8 text-center max-w-3xl mx-auto antialiased">
           Check out articles published by 33Audits
         </p>
         {pageLoading || loading ? (
