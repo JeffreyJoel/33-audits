@@ -13,7 +13,7 @@ export default function Hero() {
           <br />
           <span className="relative bg-clip-text text-transparent bg-gradient-to-t from-blue-500 to-blue-600/[0.8] z-10">
             {" "}
-            Unmatched Expertise & &amp; Reliability
+            Unmatched Expertise  &amp; Reliability
           </span>
         </h1>
         <div>
