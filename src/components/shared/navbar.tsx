@@ -22,10 +22,10 @@ export default function NavBar({ isHome = true }: NavBarProps) {
             <Avatar>
               <AvatarImage src="" alt="User Avatar" />
               <AvatarFallback>
-                <Image src={profile} alt="33 audits" />
+                <Image src={profile} alt="33audits" />
               </AvatarFallback>
             </Avatar>
-            <span className="font-semibold text-2xl">33 Audits</span>
+            <span className="font-semibold text-2xl ml-2">33Audits</span>
           </div>
           <Link
             href="/"

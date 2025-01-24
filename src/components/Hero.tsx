@@ -8,8 +8,9 @@ export default function Hero() {
       <div className="relative px-8 md:px-0">
         <h1 className="text-4xl md:text-6xl font-bold mb-8 mt-18 relative text-center max-w-6xl mx-auto !leading-snug __className_399708">
           Smart Contract Auditing
-          <br />
+
           with{" "}
+          <br />
           <span className="relative bg-clip-text text-transparent bg-gradient-to-t from-blue-500 to-blue-600/[0.8] z-10">
             {" "}
             Unmatched Expertise & &amp; Reliability
