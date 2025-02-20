@@ -24,7 +24,7 @@ export function MobileNav() {
       <SheetTrigger asChild>
         <MenuIcon className="text-4xl block md:hidden cursor-pointer" />
       </SheetTrigger>
-      <SheetContent className="block md:hidden bg-[#f8f8f8] border-0">
+      <SheetContent className="block md:hidden bg-[#030612] border-0">
         <SheetHeader>
           {/* <SheetTitle>Edit profile</SheetTitle> */}
           {/* <SheetDescription>
