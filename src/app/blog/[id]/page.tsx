@@ -39,7 +39,7 @@ export default function SinglePost() {
   }, [params.id]);
   return (
     <div>
-      <NavBar isHome={false}/>
+      <NavBar isHome={false} />
       <div className="main-layout pt-12 md:pt-20">
         <div className="mx-auto max-w-6xl  mb-20">
           {loading || pageLoading ? (
@@ -86,8 +86,7 @@ export default function SinglePost() {
                     <BookOpen /> {hashnodeDetails?.readTimeInMinutes} minutes
                   </span>
                   <span className="flex items-center gap-2 ml-4">
-                    <Clock />{" "}
-                    {getOrdinalSuffix(date?.getDate())} {" "}
+                    <Clock /> {getOrdinalSuffix(date?.getDate())}{" "}
                     {date?.toLocaleString("default", { month: "long" })}{" "}
                     {date?.getFullYear()}
                   </span>

@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 interface HashnodeArticle {
   node: {
     title: string;
-    brief: string;
-    
+    brief: string; 
     coverImage?: {
       url: string;
     };
+    publishedAt: string;
   };
 }
 
@@ -36,7 +36,8 @@ export function useHashnodeArticleDetails() {
                   brief
                   coverImage {
                     url
-                  }
+                  },
+                   publishedAt
                 }
               }
               totalDocuments

@@ -40,6 +40,7 @@ export default function NavBar({ isHome = true }: NavBarProps) {
                 to={"audits"}
                 smooth={true}
                 duration={800}
+                offset={-100}
                 className="hidden md:block hover:underline text-xl font-medium cursor-pointer hover:text-blue-600"
               >
                 Audits

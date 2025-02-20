@@ -1,19 +1,24 @@
+"use client";
+
 import { Button } from "./ui/button";
 import { ArrowRight, Github } from "lucide-react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <div className="mx-auto mt-12 md:mt-24 pt-8 text-center" id="home">
-      <div className="relative px-8 md:px-0">
-        <h1 className="text-4xl md:text-6xl font-bold mb-8 mt-18 relative text-center max-w-6xl mx-auto !leading-snug __className_399708">
-          Smart Contract Auditing
-
-          with{" "}
-          <br />
+    <div className="mx-auto mt-12 md:mt-28 md:mb-20 pt-8 text-center" id="home">
+      <motion.div
+        className="relative px-8 md:px-0"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2 }}
+      >
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 mt-18 relative text-center max-w-6xl mx-auto !leading-snug __className_399708">
+          Smart Contract Auditing with <br />
           <span className="relative bg-clip-text text-transparent bg-gradient-to-t from-blue-500 to-blue-600/[0.8] z-10">
             {" "}
-            Unmatched Expertise  &amp; Reliability
+            Unmatched Expertise &amp; Reliability
           </span>
         </h1>
         <div>
@@ -50,7 +55,7 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
