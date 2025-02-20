@@ -9,7 +9,6 @@ import { useEffect, useState } from "react";
 
 export default function Blog() {
   const { hashnodeArticles, loading, error } = useHashnodeArticleDetails();
-  console.log(hashnodeArticles);
 
   const [pageLoading, setPageLoading] = useState(true);
 

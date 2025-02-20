@@ -28,8 +28,6 @@ export default function SinglePost() {
   useEffect(() => {
     const fetchData = async () => {
       const post_details = await fetchSinglePost(params?.id);
-      console.log(post_details);
-
       setHashnodeDetails(post_details);
       const date = new Date(post_details.publishedAt);
       setDate(date);
