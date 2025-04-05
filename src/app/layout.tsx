@@ -1,30 +1,37 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-import { Space_Grotesk, DM_Sans } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import MouseMoveEffect from "@/components/ui/mouse-move-effect";
 
-const agrandir = localFont({
-  src: "./fonts/Agrandir-GrandLight.otf",
-  variable: "--font-geist-sans",
-  weight: "100 400 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-const space_grotesk = Space_Grotesk({
-  subsets: ["latin"],
-});
 const dm_sans = DM_Sans({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 export const metadata: Metadata = {
-  title: "33 Audits",
+  metadataBase: new URL("https://www.33audits.xyz/"),
+  title: {
+    default: "33 Audits",
+    template: "%s | 33 Audits",
+  },
+  openGraph: {
   description:
-    "Smart Contract Auditor, Security Researcher, Solidity Developer",
+    "We've got your back when it comes to protecting your protocol and securing your data. Clear processes, real results, and a commitment to top-notch delivery every step of the way.",
+    title: "33 Audits",
+    url: "https://www.33audits.xyz/",
+    siteName: "33 Audits",
+    type: "website",
+    locale: "en_US",
+  },
+  keywords: [
+    "33 Audits",
+    "Smart Contract Audits",
+    "Blockchain Security",
+    "Web3 Security",
+    "Smart Contract Security",
+    "Blockchain Audits",
+    "Web3 Audits"]
+
+
 };
 
 export default function RootLayout({

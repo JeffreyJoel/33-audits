@@ -1,9 +1,10 @@
+import { fetchAllHashnodePosts } from "@/utils/actions/hashnodeArticles";
 import { useState, useEffect } from "react";
 
 interface HashnodeArticle {
   node: {
     title: string;
-    brief: string; 
+    brief: string;
     coverImage?: {
       url: string;
     };
@@ -11,9 +12,10 @@ interface HashnodeArticle {
   };
 }
 
-
 export function useHashnodeArticleDetails() {
-  const [hashnodeArticles, setHashnodeArticles] = useState<HashnodeArticle[]>([]);
+  const [hashnodeArticles, setHashnodeArticles] = useState<HashnodeArticle[]>(
+    []
+  );
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -21,65 +23,13 @@ export function useHashnodeArticleDetails() {
     setLoading(true);
     setError(null);
 
-    try {
-      const query = `
-        query Publication(
-          $host: String
-        ) {
-          publication(
-            host: $host
-          ) {
-            posts(first: 10) {
-              edges {
-                node {
-                  title
-                  brief
-                  coverImage {
-                    url
-                  },
-                   publishedAt
-                }
-              }
-              totalDocuments
-              pageInfo {
-                endCursor
-                hasNextPage
-              }
-            }
-          } 
-        }
-      `;
-
-      const response = await fetch("https://gql.hashnode.com/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          query,
-          variables: { host: "33audits.hashnode.dev" },
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to fetch article details");
-      }
-
-      const data = await response.json();
-      const posts = data.data.publication.posts.edges;
-
-      if (posts) {
-        setHashnodeArticles(posts);
-      } else {
-        throw new Error("Article not found");
-      }
-    } catch (err) {
-      setError(
-        err instanceof Error ? err.message : "An unknown error occurred"
-      );
-    } finally {
-      setLoading(false);
+    const posts = await fetchAllHashnodePosts();
+    if (posts) {
+      setHashnodeArticles(posts);
+    } else {
+      setError("Failed to fetch articles");
     }
+    setLoading(false);
   };
 
   const fetchSinglePost = async (slug: string | string[]) => {
@@ -117,9 +67,9 @@ export function useHashnodeArticleDetails() {
         },
         body: JSON.stringify({
           query,
-          variables: { 
+          variables: {
             host: "33audits.hashnode.dev",
-            slug: slug 
+            slug: slug,
           },
         }),
       });
@@ -129,7 +79,7 @@ export function useHashnodeArticleDetails() {
       }
 
       const data = await response.json();
-      
+
       const post = data.data.publication.post;
 
       if (post) {
@@ -151,13 +101,10 @@ export function useHashnodeArticleDetails() {
     fetchArticles();
   }, []);
 
-  return { 
-    hashnodeArticles, 
-    loading, 
-    error, 
-    fetchSinglePost 
+  return {
+    hashnodeArticles,
+    loading,
+    error,
+    fetchSinglePost,
   };
 }
-
-
-  

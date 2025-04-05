@@ -6,12 +6,40 @@ import { useParams } from "next/navigation";
 
 import Footer from "@/components/shared/footer";
 import Image from "next/image";
-import Link from "next/link";
 import { TailwindStyledContent } from "@/hooks/useTailwindStyledContent";
 import { useHashnodeArticleDetails } from "@/hooks/useHashnodeDetails";
 import { BookOpen, Clock } from "lucide-react";
 import BlogSkeleton from "@/components/shared/loaders/BlogLoader";
 import { getOrdinalSuffix } from "@/utils";
+import { Metadata, ResolvingMetadata } from "next";
+
+// type Props = {
+//   params: Promise<{ id: string }>;
+//   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+// };
+
+// export async function generateMetadata(
+//   { params, searchParams }: Props,
+//   parent: ResolvingMetadata
+// ) {
+//   const { fetchSinglePost, loading, error } = useHashnodeArticleDetails();
+//   const slug = (await params).id;
+//   try {
+//     const post = await fetchSinglePost(slug);
+//     if (!post) {
+//       return {
+//         title: "Not Found",
+//         description: "Page not found",
+//       };
+//     }
+//     return {
+//       title: post.title,
+//       description: post.description,
+//     };
+//   } catch (error) {
+//     console.log("Error fetching post details for metadata generation: ", error);
+//   }
+// }
 
 export default function SinglePost() {
   const params = useParams();

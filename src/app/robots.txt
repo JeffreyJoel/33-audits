@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: https://33-audits.vercel.app/sitemap.xml
