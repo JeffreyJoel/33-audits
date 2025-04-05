@@ -10,20 +10,20 @@ const dm_sans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.33audits.xyz/"),
   title: {
-    default: "33 Audits",
-    template: "%s | 33 Audits",
+    default: "33Audits",
+    template: "%s | 33Audits",
   },
   openGraph: {
   description:
     "We've got your back when it comes to protecting your protocol and securing your data. Clear processes, real results, and a commitment to top-notch delivery every step of the way.",
-    title: "33 Audits",
+    title: "33Audits",
     url: "https://www.33audits.xyz/",
-    siteName: "33 Audits",
+    siteName: "33Audits",
     type: "website",
     locale: "en_US",
   },
   keywords: [
-    "33 Audits",
+    "33Audits",
     "Smart Contract Audits",
     "Blockchain Security",
     "Web3 Security",
