@@ -5,7 +5,6 @@ import Testimonial from "@/components/Reviews";
 import Footer from "@/components/shared/footer";
 import NavBar from "@/components/shared/navbar";
 import { ScrollAnimate } from "@/components/ui/scroll-animation";
-import { SparklesCore } from "@/components/ui/sparkles";
 
 export default function Home() {
   return (
