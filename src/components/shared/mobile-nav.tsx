@@ -95,7 +95,7 @@ export function MobileNav() {
           <i className="bi bi-github"></i>
         </Link>
         <Link
-          href="https://x.com/solidityauditor"
+          href="https://x.com/33audits"
           target="blank"
           className="text-2xl hover:underline underline-offset-4"
           prefetch={false}
